@@ -1,0 +1,6 @@
+emilyskipper@Emilys-MBP git % git status
+On branch main
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+emilyskipper@Emilys-MBP git % 
