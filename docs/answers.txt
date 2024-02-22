@@ -1,1 +1,93 @@
- 
+Git Lab Tutorials Completion Dates: February 14th 2024
+GitHub Account SetUp Date: January 17th 2024
+______________  
+/// Paste the console output you saved at the end of step 3.C:
+	
+	emilyskipper@Emilys-MBP git % git add docs/status.txt
+	emilyskipper@Emilys-MBP git % git commit -m "Created docs/status.txt containing output information"
+	[main daa8585] Created docs/status.txt containing output information
+	1 file changed, 6 insertions(+)
+	create mode 100644 docs/status.txt
+	emilyskipper@Emilys-MBP git % git branch                                                        
+	* main
+	emilyskipper@Emilys-MBP git %   git push origin HEAD:master                                       
+	Enumerating objects: 5, done.
+	Counting objects: 100% (5/5), done.
+	Delta compression using up to 12 threads
+	Compressing objects: 100% (3/3), done.
+	Writing objects: 100% (4/4), 479 bytes | 479.00 KiB/s, done.
+	Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+	remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+	To https://github.com/eemmillyy/git.git
+	fc2b169..daa8585  HEAD -> master
+	emilyskipper@Emilys-MBP git % 	
+______________
+/// How many commits have been done to the repository (not only by you, but by anyone) 
+    so far? Write the git command you used to get this information:
+	
+	emilyskipper@Emilys-MBP git % git rev-list --count --all
+	9
+______________  	
+/// When was the README.md file modified last? Write the 
+    git command you used to get this information
+	
+	emilyskipper@Emilys-MBP git % git log -n 1 --pretty=format:%cd README.md 
+	Fri Feb 16 16:28:28 2024 -0500 
+______________  
+/// Mention two reasons why branches are used in a Git repository
+	
+	1. Branches are used to effectively work on code 
+	   without risking making changes to existing code.	
+	2. Having multiple branches allows for better
+	   organization between different updates and versions.
+______________  	
+/// What is the difference between git log and git status? 
+
+	Git log operates on committed history and allows users
+	to view/search/flter project history while
+	Git status allows users to inspect the state of the
+	repository and staging area without showing commit information
+______________
+/// What command would you use to see the commits 
+    where “Vehicle.h” was one of the committed files? 
+
+	git log --follow Vehicle.h	
+______________
+/// What command would you use to see the commits
+    whose commit message contains the word “file”? 
+	
+	git log --grep file
+______________
+/// In the context of object-oriented programming (I) What is inheritance?
+    (II) What is polymorphism? (III) What is encapsulation? 
+	
+	1. Inheritance allows a class to inherit properties from a parent class.
+	2. Polymorphism is the idea that an object can take on many forms, each
+	   providing its own independent implementation of the interface.
+	3. Encapsulation means bundling alike data into a structured unit while still
+	   allowing access to work with the data. Also abole to restric access to 
+	   certain components.
+______________
+/// What is the main difference between the “Dictator and Lieutenants” 
+    workflow and the “Integration manager” workflow? 
+
+	Integration Manager Workflow- Centralized integration, Each developer pulls from the
+		                      central repositor. Updates are pushed to the developers
+				      own public repository then a request is made to the 
+				      maintainer of the main project to pull in the changes.
+	Dictator and Lieutenants Workflow- Multiple repositorys / used by huge projects with 
+				           hundreds of collaborators. Everyone makes pull from
+					   central repository but only the dictator can push to it.
+					   Dictator repository solves conflics and merges changes in 
+					   Lieutenant, While Lieutenant repositories solve conflics
+					   and merges changes for some developers.
+______________
+/// How would a team of 100 developers benefit from following the 
+    “Dictator and Lieutenants” workflow instead of the “Centralized” workflow?
+
+	A Centralized Workflow would become hectic with 100 developers. If changes are pushed each
+	developer would need to include previous commits so updates wouldn't override. A Dictator and 
+	Lieutenants Workflow would create a more seamless transaction between developers. 
+	One dictator pushing changes to the central repository while other dictators help assigned
+	lieutenant repositories. As stated perviously; the lieutenant repositories would be incharge 
+	of helping their assigned developers. This creates a helping system that is efficent and reliable.  
